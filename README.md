@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Clerk Cross Platform Template
+A full-stack application template for authentication and API integration using Next.js and Expo with Clerk authentication.
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📁 Project Structure
+```
+root/
+├── next-app/        # Next.js backend application
+├── expo-app/        # Expo frontend application
+└── README.md        # This file
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Quick Start
+1. Clone the repository
+```bash
+git clone https://github.com/xleron/clerk-cross-platform-template
+cd clerk-cross-platform-template
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Set up both applications by following their respective README files:
+- [Next.js Backend Setup](./next-app/README.md)
+- [Expo Frontend Setup](./expo-app/README.md)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🔑 Authentication Flow
+1. Users can sign up/sign in through the Expo mobile app using Clerk authentication
+2. The Expo app makes authenticated API calls to the Next.js backend
+3. The Next.js backend validates the authentication token and returns protected data
 
-## Learn More
+## 🛠 Technology Stack
+- **Frontend**: React Native with Expo
+- **Backend**: Next.js API Routes
+- **Authentication**: Clerk
+- **Language**: TypeScript
 
-To learn more about Next.js, take a look at the following resources:
+## 📝 Prerequisites
+- Node.js 20.x
+- pnpm
+- Expo CLI
+- Clerk account and API keys
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🔧 Environment Setup
+1. Create a Clerk account at https://clerk.dev
+2. Set up a new Clerk application
+3. Configure environment variables in both applications
